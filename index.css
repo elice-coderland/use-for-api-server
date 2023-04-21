@@ -109,12 +109,34 @@ header {
   margin-bottom: 5px;
 }
 
+.post-item .edit-title {
+  width: 100%;
+  height: 10%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: aqua;
+}
+
+.post-item .edit-content {
+  width: 100%;
+  height: 75%;
+  margin-bottom: 5px;
+  background-color: azure;
+}
 .detailBtn {
   text-align: right;
 }
 
 .detailBtn button {
   border: 1px solid salmon;
-  background-color: aquamarine;
+  background-color: lightslategray;
   width: 3rem;
+}
+
+.detailBtn button:hover {
+  background-color: aquamarine;
+}
+
+.post-item:hover {
+  border: 1.5px solid gold;
 }
