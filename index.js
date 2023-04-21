@@ -9,6 +9,10 @@ const postBtn = document.getElementById('postBtn');
 const cancelBtn = document.getElementById('cancelBtn');
 const form = document.getElementById('form-wrapper');
 
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  form.reset();
+})
 postBtn.addEventListener('click', () => {
   showForm(form);
 });
