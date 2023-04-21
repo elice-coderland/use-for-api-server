@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>use-for-api-server</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>use-for-api-server</h1>
+        <button id="postBtn">블로그 포스팅하기</button>
+      </div>
+    </header>
+    <main>
+      <div id="form-wrapper">
+        <input type="text" id="form-title" placeholder="제목을 적어주세요.">
+        <input type="text" id="form-content" placeholder="본문 내용을 적어주세요.">
+        <div id="button-wrapper">
+          <button id="submitBtn">등록하기</button>
+          <button id="cancelBtn">취소하기</button>
+        </div>
+      </div>
+
+      <div id="posts-container">
+        <div class="post-item">
+          <h2>${post.title}</h2>
+          <p>${post.content}</p>
+          <div class="detailBtn">
+            <button class="updateBtn">수정</button>
+            <button class="deleteBtn">삭제</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
